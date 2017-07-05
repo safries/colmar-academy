@@ -18,7 +18,6 @@ body,
 html {
   font-family: "Hind", Georgia, serif;
   font-size: 18px;
-
 }
 
 h1 {
@@ -58,9 +57,7 @@ p {
   top: 64px;
   position: relative;
   width: 100%;
-/*  height: 500px; */
-
-}
+  }
 
 .content-colleft {
   display: flex;
@@ -68,18 +65,15 @@ p {
   padding: 32px 24px;
   background-color: grey;
   width: 60%;
-
 }
 
 .content-colright {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 32px 40px;
   background-color: #0DFF7D;
-
+  width: 40%;
 }
 
 .container-media {
@@ -91,8 +85,8 @@ p {
 .container-media img,
 .container-media video {
   display: inline-block;
-  height: auto;
-  width: 0 auto;
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -103,7 +97,7 @@ header {
   justify-content: space-between;
   height: 64px;
   width: 100%;
-  background-color: #32ACFF;
+  background-color:  #D1FFBC;
   position: fixed;
   margin: 0;
   z-index: 10;
@@ -144,7 +138,9 @@ nav ul li {
 
 /*Banner */
 .banner {
+  display: flex;
   height: 500px;
+  justify-content: center;
 }
 
 .btn-main {
@@ -183,36 +179,30 @@ p.caption {
 .campus-details {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  height: 33%;
-/*  width: 423px; */
-  padding: 16px;
-  border: 1px solid white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 168px;
+  width: 423px;
 }
 
 .campus-details .container-media {
-  height: 85%;
   width: 35%;
-  border: 1px solid yellow;
+  padding: 16px;
 }
 
 .campus-details .container-media img {
-  width: 148.05px;
-  height: 148.05px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .event-details {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  border: 1px solid black;
-  padding-left: 10px;
-  height: 85%;
-}
-
-.event-details p {
-padding-top: 8px;
-padding-bottom: 8px;
+  width: 65%;
+  height: 100%;
 }
 
 .event-details a {
@@ -227,16 +217,21 @@ padding-bottom: 8px;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('https://kathiissermanphotos.files.wordpress.com/2013/11/autumn-colors-an-abstract.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+.courses h2 {
+  padding-top: 30px;
+  color: white;
 }
 
 .learning {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 1px solid purple;
   padding: 32px;
   max-width: 1024px;
 }
@@ -245,23 +240,110 @@ padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid blue;
+  justify-content: flex-start;
   text-align: left;
   padding-bottom: 24px;
-  height: 300px;
-  max-width: 25%;
+  max-width: 30%;
   margin-bottom: 16px;
+  background-color: white;
+  border: 2px solid black;
 }
 
+.course-details-upper {
+  height: 220px;
+}
+.course-details-upper img {
+  height: 80%;
+  width: 100%;
+  }
+
+.course-details-upper h3 {
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+
+.course-details-lower {
+  align-items: flex-start;
+  padding-left: 16px;
+  padding-right: 8px;
+}
 
 .course-details span {
-  padding: 8px 0;
-  color: aqua;
+  line-height: 1rem;
+  padding: 8px 16px;
+  color: #CC1812;
 }
 
+/*Splice ThreeA - Thesis Focus */
+.thesis {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
+.thesis-two {
+  display: flex;
+  flex-direction: row;
+}
 
+.thesis-two video {
+  padding-bottom: 24px;
+}
 
-.course-details-content {
+.thesis-two h3,
+.thesis-two p {
+  text-align: left;
+}
+
+/*Splice ThreeB - Theses Details */
+.exhibits {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 168px;
+  width: 423px;
+}
+
+.exhibits .container-media {
+  width: 35%;
+  padding: 16px;
+}
+
+.exhibits .container-media img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.exhibit-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 65%;
+  height: 100%;
+  text-align: left;
+}
+
+/*Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height:100px;
+  background-color: #D1FFBC;
+  margin-top: 64px;
+  padding-top: 16px;
+}
+
+footer ul {
+
+}
+
+footer p,
+footer li {
+  display: inline-block;
+  padding: 5px;
 
 }
