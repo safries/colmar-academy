@@ -58,42 +58,187 @@ p {
   top: 64px;
   position: relative;
   width: 100%;
-  border: 1px solid red;
 /*  height: 500px; */
 
 }
 
-.container-media {
-display: inline-block;
+.content-colleft {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  background-color: grey;
+  width: 60%;
 
 }
 
-/*.container-media img,
+.content-colright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #0DFF7D;
+
+}
+
+.container-media {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.container-media img,
 .container-media video {
   display: inline-block;
   height: auto;
   width: 0 auto;
-} */
+  overflow: hidden;
+}
+
+/*Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background-color: #32ACFF;
+  position: fixed;
+  margin: 0;
+  z-index: 10;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+header .logo img {
+  display: inline-block;
+}
+
+header .logo p {
+  padding-left: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+header .logo p span {
+  color: grey;
+  font-weight: bold;
+}
+
+nav .desktop,
+nav .mobile {
+  padding-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 4rem 5px;
+}
+
+
+/*Banner */
+.banner {
+  height: 500px;
+}
+
+.btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  background-color: white;
+  height: 2rem;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.btn-main p {
+  font-family: Georgia;
+  font-size: 1.5rem;
+  color: #9332FF;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.btn-main:hover {
+  background-color: #532DE8;
+}
+.btn-main p:hover {
+  color: white;
+}
+
+/*Splice OneA - Information */
+p.caption {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+/*Splice OneB - Campus Events */
+.campus-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 33%;
+/*  width: 423px; */
+  padding: 16px;
+  border: 1px solid white;
+}
+
+.campus-details .container-media {
+  height: 85%;
+  width: 35%;
+  border: 1px solid yellow;
+}
+
+.campus-details .container-media img {
+  width: 148.05px;
+  height: 148.05px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding-left: 10px;
+  height: 85%;
+}
+
+.event-details p {
+padding-top: 8px;
+padding-bottom: 8px;
+}
+
+.event-details a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+}
 
 /*Splice Two - Courses */
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+
+}
+
 .learning {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   border: 1px solid purple;
   padding: 32px;
-  height: 100%;
-  max-width: 1050px;
-}
-
-.courses {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 600px;
-  margin-bottom: 16px;
-  border: 1px solid red;
+  max-width: 1024px;
 }
 
 .course-details {
@@ -103,12 +248,15 @@ display: inline-block;
   border: 1px solid blue;
   text-align: left;
   padding-bottom: 24px;
-  height: 220px;
+  height: 300px;
   max-width: 25%;
   margin-bottom: 16px;
 }
 
-.course-details img {
+
+.course-details span {
+  padding: 8px 0;
+  color: aqua;
 }
 
 
