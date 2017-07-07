@@ -12,25 +12,31 @@
     <div class="logo">
       <img src="./resources/media/images/ic-logo.svg" />
       <p>Colmar <span>Academy</p>
-      </div>
-      <nav>
-        <ul>
-          <li>On Campus</li>
-          <li>Online</li>
-          <li>For Companies</li>
-          <li>Sign In</li>
-        </ul>
-      </nav>
+    </div>
+    <nav>
+      <ul class="desktop">
+          <li><a href="#campus">On Campus</a></li>
+          <li><a href="#courses">Online</a></li>
+          <li><a href="#thesis">For Companies</a></li>
+          <li><a href="https://www.codecademy.com/login?redirect=https%3A%2F%2Fwww.codecademy.com%2F" rel="external">Sign In</a></li>
+      </ul>
+    </nav>
+    <div class="menu-mobile">
+      <img src="./resources/media/images/ic-logo.svg" />
+      <img src="./resources/media/images/ic-on-campus.svg" />
+      <img src="./resources/media/images/ic-online.svg" />
+      <img src="./resources/media/images/ic-login.svg" />
+    </div>
     </header>
 
-    <!-- Banner -->
-    <div class="container-content banner">
+    <!-- Splice One - Banner -->
+    <div class="container-content" id="banner">
       <div class="content-colleft">
         <div class="container-media">
           <img src="./resources/media/images/banner.jpg">
         </div>
       </div>
-      <div class="content-colright banner">
+      <div class="content-colright">
         <h1>Learn Something New Everyday</h1>
         <h2>Lorem Ipsum Dolar sit amet, consectetur adipiscing elit.</h2>
         <div class="btn-main">
@@ -39,10 +45,9 @@
       </div>
     </div>
 
-    <!-- Content Splice One: On Campus/Information -->
-
-    <div class="container-content">
-      <div class="content-colleft">
+    <!-- Splice Two - On Campus/Information -->
+    <div class="container-content" id="campus">
+      <div class="content-colleft" id="testimonial">
         <div class="container-media">
           <img src="./resources/media/images/information-main.jpg" alt="student reading book with trees and lake in background" />
         </div>
@@ -52,8 +57,11 @@
       </div>
       <div class="content-colright">
         <div class="campus-details">
-          <div class="container-media">
+          <div class="container-media campus-desktop">
             <img src="./resources/media/images/information-orientation.jpg" />
+          </div>
+          <div class="container-media campus-mobile">
+            <img src="./resources/media/images/information-orientation-mobile.jpg" />
           </div>
           <div class="event-details">
             <h3>Orientation Date</h3>
@@ -62,8 +70,11 @@
           </div>
         </div>
         <div class="campus-details">
-          <div class="container-media">
+          <div class="container-media campus-desktop">
             <img src="./resources/media/images/information-campus.jpg" />
+          </div>
+          <div class="container-media campus-mobile">
+            <img src="./resources/media/images/information-campus-mobile.jpg" />
           </div>
           <div class="event-details">
             <h3>Our Campus</h3>
@@ -72,8 +83,11 @@
           </div>
         </div>
         <div class="campus-details">
-          <div class="container-media">
-            <img src="./resources/media/images/information-campus.jpg" />
+          <div class="container-media campus-desktop">
+            <img src="./resources/media/images/information-guest-lecture.jpg" />
+          </div>
+          <div class="container-media campus-mobile">
+            <img src="./resources/media/images/information-guest-lecture-mobile.jpg" />
           </div>
           <div class="event-details">
             <h3>Our Guest Lecture</h3>
@@ -81,11 +95,13 @@
             <a href="http://www.google.ca">Read More</a>
           </div>
         </div>
+        <!-- Mobile -->
+
       </div>
     </div>
 
-    <!-- Splice Two - Learning -->
-    <div class="container-content courses">
+    <!-- Splice Three - Courses -->
+    <div class="container-content" id="courses">
       <h2>Start Learning</h2>
       <div class="learning">
         <div class="course-details">
@@ -166,9 +182,9 @@
       </div>
     </div>
 
-    <!-- Splice Three - Theses -->
+    <!-- Splice Four - Theses -->
 
-    <div class="container-content thesis">
+    <div class="container-content" id="thesis">
       <h2>Thesis Exhibits</h2>
       <div class="thesis-two">
         <div class="content-colleft">
@@ -205,6 +221,7 @@
 <!-- Footer -->
 <footer>
   <p>(c)2017 Colmar Academy, All Rights Reserved</p>
+
   <ul>
     <li>Terms</li>
     <li>Privacy</li>
