@@ -70,6 +70,13 @@ a {
   color: #FF504B;
 }
 
+h3.whiteout {
+  color: #FFF8BC
+}
+p.whiteout{
+  color: white;
+}
+
 /*Main Containers */
 .container-content {
   display: flex;
@@ -81,7 +88,7 @@ a {
 .content-colleft {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
   width: 60%;
   height:auto;
 }
@@ -90,7 +97,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem 2.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
   width: 40%;
 }
 
@@ -129,10 +136,12 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  margin-bottom: 4rem;
   width: 100%;
   background-color:  #FFF8BC;
   position: fixed;
   margin: 0;
+  top: 0;
   z-index: 10;
 }
 header .logo {
@@ -199,7 +208,9 @@ nav a:visited {
   display: flex;
   height: 500px;
   justify-content: center;
-  background-color: #4C7CFF;
+  background-image: linear-gradient(rgba(38, 50, 163, 0.4), rgba(38, 50, 163, 0.6)), url('http://uhqwallpapers.com/wp-content/uploads/2017/02/Light-Abstract-High-Resolution-Background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #banner .content-colright {
   justify-content: center;
@@ -240,7 +251,7 @@ nav a:visited {
       width: 100%;
       justify-content: flex-start;
       align-items: center;
-      padding: 2rem 1rem;
+      padding: 1rem;
       text-align: center;
     }
     .content-colleft .container-media img {
@@ -250,6 +261,7 @@ nav a:visited {
 
   @media only screen and (min-width: 600px) and (max-width: 800px) {
     #banner .container-media img {
+      padding-top: 2rem;
       max-width: 480px;
     }
   }
@@ -261,9 +273,7 @@ nav a:visited {
 #campus img {
   height: 80%;
 }
-#testimonial {
-  border: 2px solid blue;
-}
+
 p.caption {
   font-family: "Patua One";
   font-style: italic;
@@ -374,7 +384,6 @@ p.caption {
 
 }
 #courses h2 {
-  padding-top: 2rem;
   padding-bottom: 1rem;
   color: white;
 }
@@ -420,7 +429,7 @@ p.caption {
 }
 
 .course-details span {
-  padding: 0.5rem 1rem;
+  padding: 2rem;
   color: #CC1812;
 }
 
@@ -464,13 +473,11 @@ p.caption {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: linear-gradient(rgba(38, 50, 163, 0.4), rgba(38, 50, 163, 0.6)), url('http://uhqwallpapers.com/wp-content/uploads/2017/02/Light-Abstract-High-Resolution-Background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4C7CFF;
 }
 #thesis h2 {
   color: white;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
   }
 
 .thesis-two {
@@ -542,7 +549,6 @@ footer {
   width: 100%;
   height:100px;
   background-color: #FFF8BC;
-  margin-top: 4rem;
   padding-top: 1rem;
 }
 
